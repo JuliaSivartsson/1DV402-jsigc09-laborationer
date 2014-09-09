@@ -96,35 +96,35 @@ namespace Laboration1._1
             // if the result is largen than 0, write the following
             if (remains > 0)
             {
-                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "500-dollars:", remains));
+                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "500-bills:", remains));
             }
             // 100
             remains = change / 100;
             change = moneyToReturn % 100;
             if (remains > 0)
             {
-                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "100-dollars:", remains));
+                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "100-bills:", remains));
             }
             // 50
             remains = change / 50;
             change = moneyToReturn % 50;
             if (remains > 0)
             {
-                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "50-dollars:", remains));
+                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "50-bills:", remains));
             }
             // 10
             remains = change / 10;
             change = moneyToReturn % 10;
             if (remains > 0)
             {
-                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "10-dollars:", remains));
+                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "10-bills:", remains));
             }
             //1
             remains = change / 1;
             change = moneyToReturn % 1;
             if (remains > 0)
             {
-                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "1-dollars:", remains));
+                Console.WriteLine(String.Format("{0,-10} | {1,-5}", "1-bills:", remains));
             }
 
 
