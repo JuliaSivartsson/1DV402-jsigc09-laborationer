@@ -13,7 +13,7 @@ namespace Laboration1._1
 
             // Define variables.
             double totalCost;
-            int amountPaid;
+            int amountPaid = 0;
             uint amountToPay;
             double roundingOffAmount;
             int moneyToReturn;
@@ -33,15 +33,12 @@ namespace Laboration1._1
             }
 
 
-
-
-            amountPaid = 0;
-            // try if amountPaid is numeric ?
-
             Boolean retry = true;
 
+           // loop to retry
             while (retry)
             {
+                // try if amountPaid is numeric
                 try
                 {
                     retry = false;
