@@ -11,10 +11,10 @@ namespace Laboration1._2
 
         static void Main(string[] args)
         {
+            // Do this as long as ESC-button is not pressed
             do
             {
                 Console.Write("Select an odd number <max 79> for the triangles base: ");
-                
                 //Contact method
                 RenderTriangle();
             }
@@ -22,11 +22,9 @@ namespace Laboration1._2
             while (Console.ReadKey(true).Key != ConsoleKey.Escape);
         }
 
-
         // Method to check for odd number
         static byte ReadOddByte()
         {
-
             byte number = 0;
 
             Boolean retry = true;
@@ -39,11 +37,10 @@ namespace Laboration1._2
 
                     if (number % 2 != 0)
                     {
-                        retry = false;
+
                     }
                     else if (number < 1)
                     {
-                        retry = false;
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.WriteLine("The number is too small!");
                         Console.ResetColor();
@@ -51,7 +48,6 @@ namespace Laboration1._2
                     }
                     else if (number > 79)
                     {
-                        retry = false;
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.WriteLine("The number is too large!");
                         Console.ResetColor();
@@ -59,26 +55,20 @@ namespace Laboration1._2
                     }
                     else if (number % 2 == 0)
                     {
-                        retry = false;
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.WriteLine("The number is not odd!");
                         Console.ResetColor();
-
-
                     }
+                    break;
                 }
                 catch
                 {
-                    retry = false;
                     Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("this was not an int number!");
+                    Console.WriteLine("This was not an int number!");
                     Console.ResetColor();
-
                 }
             }
-
             return number;
-
         }
 
         //Method to draw the triangle
@@ -111,13 +101,9 @@ namespace Laboration1._2
                     }
                     Console.WriteLine();
                     number = number + 2;
-
                 }
             }
-
             Console.WriteLine("Press ENTER to draw another triangle, or ESC to exit.");
-
         }
-
     }
 }
