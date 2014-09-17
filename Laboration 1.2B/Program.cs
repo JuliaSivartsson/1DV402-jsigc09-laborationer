@@ -14,7 +14,6 @@ namespace Laboration1._2
             // Do this as long as ESC-button is not pressed
             do
             {
-                Console.Write("Select an odd number <max 79> for the triangles base: ");
                 //Contact method
                 RenderTriangle();
             }
@@ -27,31 +26,28 @@ namespace Laboration1._2
         {
             byte number = 0;
 
-            Boolean retry = true;
-            while (retry)
+            while (true)
             {
+                Console.Write("Select an odd number <max 79> for the triangles base: ");
                 try
                 {
-
                     number = byte.Parse(Console.ReadLine());
 
-                    if (number % 2 != 0)
+                    if (number % 2 != 0 && number >= 1 && number < 79)
                     {
-
+                        break;
                     }
                     else if (number < 1)
                     {
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.WriteLine("The number is too small!");
                         Console.ResetColor();
-
                     }
                     else if (number > 79)
                     {
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.WriteLine("The number is too large!");
                         Console.ResetColor();
-
                     }
                     else if (number % 2 == 0)
                     {
@@ -59,7 +55,6 @@ namespace Laboration1._2
                         Console.WriteLine("The number is not odd!");
                         Console.ResetColor();
                     }
-                    break;
                 }
                 catch
                 {
@@ -76,7 +71,7 @@ namespace Laboration1._2
         {
             byte cols = ReadOddByte();
             int bottom = cols;
-            int number = 1;
+            int temp = bottom;
 
             // only display the triangle if everything is correct (number not too big, too small, odd a.s.o.)
             if (cols % 2 == 0)
@@ -85,25 +80,34 @@ namespace Laboration1._2
             else
             {
                 //rows
-                for (int a = 1; a <= bottom; a++)
+                for (int i = 1; i <= bottom; i++)
                 {
                     //space from edge
-                    for (int c = bottom; c >= a; c--)
+                    for (int j = 1; j < temp; j++)
                     {
                         Console.Write(" ");
                     }
+                    temp--;
                     //stars
-                    for (int b = 0; b < number; b++)
+                    for (int k = 1; k <= 2 * i - 1; k++)
                     {
-
                         Console.Write("*");
 
+                        //got help with how to break the loop: http://social.msdn.microsoft.com/Forums/en-US/f3bd28d3-b0a4-47bf-96b1-c76004652e6b/how-to-exit-the-loop-in-c-before-the-end?forum=csharplanguage
+                        if (k == bottom)
+                        {
+                            Console.WriteLine();
+                            Console.BackgroundColor = ConsoleColor.Green;
+                            Console.ForegroundColor = ConsoleColor.Black;
+                            Console.WriteLine("Press ENTER to draw another triangle, or ESC to exit.");
+                            Console.ResetColor();
+                            return;
+                        }
                     }
                     Console.WriteLine();
-                    number = number + 2;
                 }
             }
-            Console.WriteLine("Press ENTER to draw another triangle, or ESC to exit.");
+
         }
     }
 }
