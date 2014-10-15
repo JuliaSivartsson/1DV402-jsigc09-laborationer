@@ -1,0 +1,6 @@
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration2.2\bin\Debug\Laboration2.2.exe.config
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration2.2\bin\Debug\Laboration2.2.exe
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration2.2\bin\Debug\Laboration2.2.pdb
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration2.2\obj\Debug\Laboration2.2.csprojResolveAssemblyReference.cache
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration2.2\obj\Debug\Laboration2.2.exe
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration2.2\obj\Debug\Laboration2.2.pdb

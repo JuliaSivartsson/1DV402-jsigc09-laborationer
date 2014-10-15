@@ -1,0 +1,5 @@
+c:\users\itzy\documents\visual studio 2013\Projects\Laboration 2.1\bin\Debug\Laboration 2.1.exe.config
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration 2.1\bin\Debug\Laboration 2.1.exe
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration 2.1\bin\Debug\Laboration 2.1.pdb
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration 2.1\obj\Debug\Laboration 2.1.exe
+C:\Users\itzy\Documents\Visual Studio 2013\Projects\Laboration 2.1\obj\Debug\Laboration 2.1.pdb
